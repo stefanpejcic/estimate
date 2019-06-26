@@ -1,0 +1,140 @@
+/* ------------------------------------------------------------
+	Estimator-Print
+------------------------------------------------------------ */
+body.ep-body {
+	color: black;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 5%;
+}
+.ep-body #estimate-form {
+	margin: 0 auto;
+	background: white;
+	float: none;
+	display: block;
+	width: 80%;
+}
+#estimate-form table {
+	width: 100%;
+	line-height: 1.23em;
+}
+#estimate-form thead th {
+	font-size: 10px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+#estimate-form thead th.project-title,
+#estimate-form thead th.rate {
+	padding-left: 15px;
+	text-align: left;
+	font-weight: normal;
+}
+#estimate-form thead .col-heads th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: gray;
+}
+#estimate-form thead td {
+	border-bottom: 1px solid gray;
+	padding: 8px 0 8px 15px;
+}
+#estimate-form thead td.project-title {
+	vertical-align: top;
+}
+#estimate-form thead td .title {
+	display: inline;
+	line-height: 1.25em;
+	float: left;
+	padding-right: 10px;
+}
+#estimate-form thead #title_field,
+#estimate-form thead #default_rate_field {
+	margin-right: 10px;
+}
+#estimate-form thead td .currency {
+	display: inline;
+	line-height: 1.25em;
+	float: left;
+}
+#estimate-form thead td .default_rate {
+	display: inline;
+	line-height: 1.25em;
+	float: left;
+	padding-right: 10px;
+}
+.ep-body #estimate-form thead .project-title {
+	text-align: left;
+	width: 50%;
+	border-right: 1px solid gray;
+	padding-right: 5px;
+}
+#estimate-form thead .big {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: none;
+	line-height: 1.25em;
+}
+#estimate-form tbody td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 3px 0;
+	border-bottom: 1px solid gray;
+}
+#estimate-form thead .left {
+	text-align: left;
+	padding-left: 15px;
+	width: 50%;
+}
+#estimate-form tbody .left {
+	text-align: left;
+	padding-left: 15px;
+	width: 50%;
+	font-family: Times, serif;
+}
+#estimate-form thead .right,
+#estimate-form tbody .right {
+	text-align: right;
+	padding-right: 15px;
+	width: 105px;
+}
+#estimate-form tbody .right {
+	font-weight: bold;
+	font-size: 16px;
+}
+#estimate-form table td.operator,
+#estimate-form table th.operator {
+	width: 20px;
+	color: gray;
+}
+#estimate-form .table_footer {
+	padding: 15px 15px 0 0;
+	text-align: right;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.25em;
+}
+
+/* ------------------------------------------------------------
+	Estimate Form Table - Editable
+------------------------------------------------------------ */
+
+#title_field,
+#currency_field,
+select,
+#default_rate_field,
+#task_field
+ {
+	float: left;
+	display: inline;
+	margin: 3px 0;
+}
+#default_rate_field {
+	width: 25px;
+	margin-left: 5px;
+}
+
+
+

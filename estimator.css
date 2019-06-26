@@ -1,0 +1,224 @@
+html {
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* ------------------------------------------------------------
+	Estimate Form Table
+------------------------------------------------------------ */
+
+.estimator {
+	width: 100%;
+	max-width: 50em;
+	margin: 2em auto;
+}
+.estimator table {
+	width: 100%;
+}
+.estimator thead th {
+	font-size: .6875em;
+	text-align: center;
+	color: rgba(0,0,0,.5);
+	text-transform: uppercase;
+}
+.estimator thead th.project-title,
+.estimator thead th.rate {
+	padding-left: 1em;
+	text-align: left;
+}
+.estimator thead .col-heads th {
+	padding-top: .75em;
+}
+.estimator thead td {
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	padding: .5em 0 .5em 1em;
+}
+.estimator thead td.project-title {
+	vertical-align: top;
+}
+.estimator thead td .title {
+	padding-right: .75em;
+}
+.estimator thead #title_field,
+.estimator thead #default_rate_field {
+	margin-right: .75em;
+}
+.estimator thead td .currency {
+
+}
+.estimator thead td .default_rate {
+	padding-right: .75em;
+}
+.estimator thead td.rate:hover {
+	background-color: #FFEFC8;
+}
+.estimator thead td a {
+	font-size: .75em;
+	font-weight: 300;
+	display: none;
+}
+.estimator thead td a.edit {
+	font-size: .75em;
+	display: none;
+}
+.estimator thead td a.save {
+	display: none;
+	font-size: .75em;
+}
+.estimator tbody td a.save {
+	display: none;
+	font-size: .75em;
+}
+.estimator thead td.project-title:hover,
+.estimator thead td.hover {
+	background-color: #FFEFC8;	
+}
+.estimator thead td:hover a {
+	display: inline-block; /* Make the edit/save links visible on hover */
+}
+.estimator thead .project-title {
+	text-align: left;
+	/*width: 260px;*/
+	border-right: 1px solid rgba(0,0,0,.15);
+	padding-right: .3125em;
+}
+.estimator thead .big {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #000000;
+	line-height: 1.25em;
+}
+.estimator tbody #clone_row {
+	display: none;
+}
+.estimator tbody tr.alt {
+	background: rgba(0,0,0,.05);
+}
+.estimator tbody td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 3px 0;
+}
+.estimator tbody td .task {
+
+}
+.estimator tbody td .task_field,
+#title_field {
+
+}
+.estimator tbody td a {
+	display: none;
+}
+.estimator tbody td a.edit {
+
+}
+.estimator tbody td a.delete {
+
+}
+.estimator tbody td.left:hover, 
+.estimator tbody td.hover {
+	background-color:  #FFEFC8;
+}
+.estimator tbody td:hover a,
+.estimator tbody td.hover a {
+	display: inline; /* Make the edit/save links visible on hover */
+}
+.estimator thead .left,
+.estimator tbody .left {
+	text-align: left;
+	padding-left: 1em;
+	width: 50%;
+}
+.estimator thead .right,
+.estimator tbody .right {
+	text-align: right;
+	padding-right: 1em;
+	width: 20%;
+}
+.estimator tbody .right {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.estimator table td.operator,
+.estimator table th.operator {
+	color: rgba(0,0,0,.5);
+	font-size: .75em;
+	text-align: center;
+}
+.estimator .estimator-footer {
+	padding: 1em 0 0 0;
+	width: 100%;
+}
+.estimator .estimator-footer #tf_buttons{
+	padding: 0 0 0 1em;
+}
+.estimator .estimator-footer #tf_buttons a {
+
+}
+.estimator .estimator-footer a.add-task {
+
+}
+.estimator .estimator-footer a.add-task:hover {
+
+}
+.estimator .estimator-footer #reset_link {
+
+}
+.estimator .estimator-footer #grandTotal {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: right;
+	width: 20%;
+	padding: 0 1em 0 0;
+	float: right;
+}
+
+/* ------------------------------------------------------------
+	Estimate Form Table - Editable
+------------------------------------------------------------ */
+
+#title_field,
+#default_rate_field,
+.task_field,
+.qty_field,
+.price_item_field {
+	font-size: 1rem;
+	padding: .25em;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 3px;
+}
+
+#default_rate_field {
+	margin-left: .3125em;
+	width: 30%;
+}
+
+/* ------------------------------------------------------------
+	Print Ready Estimate
+------------------------------------------------------------ */
+
+body.ep-body {
+	background: white;
+}
+.ep-body .estimator {
+	padding: 40px;
+	margin: 0 auto;
+	background: white;
+	float: none;
+	display: block;
+}
+.ep-body .estimator table tbody td {
+	border-bottom: 1px solid #CCCCCC;
+}
+.ep-body .estimator table td:hover {
+	background: none;
+}
+.ep-body .estimator thead .col-heads th {
+	padding-bottom: .75em;
+}
+.ep-body .estimator .estimator-footer #grandTotal {
+	font-size: 1.5em;
+	line-height: 1.25em;
+	color: black;
+}
